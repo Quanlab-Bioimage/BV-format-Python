@@ -1,1 +1,2 @@
 # BV-format-Python
+这是BV大数据制作的python接口，此接口可直接用python调用大数据制作程序，同时也容易扩展到用其他语言调用BV大数据制作程序
