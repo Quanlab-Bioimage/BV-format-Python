@@ -1,2 +1,2 @@
 # BV-format-Python
-这是BV大数据制作的python接口，此接口可直接用python调用大数据制作程序，同时也容易扩展到用其他语言调用BV大数据制作程序
+This is a Python interface made by BV Big Data. This interface can directly call the BV Big Data production program with Python, and it is also easy to extend to calling the BV Big Data production program with other languages.
