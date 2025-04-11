@@ -2,7 +2,7 @@ import ctypes
 import os
 import sys
 
-if sys.version_info[:2] >= (3, 7):
+if sys.version_info[:2] > (3, 7):
     os.add_dll_directory(os.path.abspath(os.path.dirname(__file__)) + '/libs')
 else:
     os.environ['path'] = os.path.abspath(os.path.dirname(__file__)) + '/libs;' + os.environ['path']
@@ -42,10 +42,10 @@ def createBV(config):
 
 if __name__ == '__main__':
     config = {
-        'srcPath': r'E:\imgslice',
-        'savePath': r'H:\BV',
+        'srcPath': r'E:\xueguan',
+        'savePath': r'E:\test-BV',
         'sampleType': 1,  # 0：max 1:mean
-        'codeType': 1,  # 0:压缩比大 1:速度快
+        'codeType': 0,  # 0：压缩比大 1：速度快
         'startEpoch': 0,
         'noUseCpu': 1
     }
