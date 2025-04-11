@@ -9,7 +9,7 @@ config = {
         'srcPath': r'E:\imgslice',
         'savePath': r'H:\BV',
         'sampleType': 0,  # 0：max 1:mean
-        'codeType': 1,  # Code0,Code1
+        'codeType': 0,  # Code0,Code1
         'startEpoch': 0,
         'noUseCpu': 1
     }
