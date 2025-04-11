@@ -8,7 +8,7 @@ This is a Python interface made by BV Big Data. This interface can directly call
 config = {
         'srcPath': r'E:\imgslice',
         'savePath': r'H:\BV',
-        'sampleType': 1,  # 0：max 1:mean
+        'sampleType': 0,  # 0：max 1:mean
         'codeType': 1,  # Code0,Code1
         'startEpoch': 0,
         'noUseCpu': 1
