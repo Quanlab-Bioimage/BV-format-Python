@@ -15,11 +15,7 @@ config = {
     }
 createBV(config)
 ```
-## Install
-```
-pip install psutil
-pip install pillow
-```
+
 ## Test data
 https://zenodo.org/record/8385040
 
@@ -27,7 +23,7 @@ https://zenodo.org/record/8385040
 * srcPath: Image sequence folder path,
 * savePath: indicates the path of the data saving folder.
 * sampleType: Sampling mode. 0: maximum sampling, 1: average sampling
-* codeType: Encoding mode. 0 :ffv1,1:ffv1huf
+* codeType: Encoding mode. Code0: high compression ratio Code1: high speed
 * startEpoch: Start round, starting from 0, used to continue production from the specified round after an abnormal interruption
 * noUseCpu: indicates the number of cpu cores reserved
 
