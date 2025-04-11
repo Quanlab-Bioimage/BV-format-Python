@@ -2,7 +2,7 @@
 ## Script Introduction
 This is a Python interface made by BV Big Data. This interface can directly call the BV Big Data production program with Python, and it is also easy to extend to calling the BV Big Data production program with other languages.
 ## Program entry
-[BVCreator.py](https://github.com/Quanlab-Bioimage/BV-format-Python/tree/main/BVCreator)
+[BVCreator/BVCreator.py](https://github.com/Quanlab-Bioimage/BV-format-Python/tree/main/BVCreator)
 ## Program call mode
 ```
 config = {
@@ -15,7 +15,14 @@ config = {
     }
 createBV(config)
 ```
-
+```
+* srcPath: Image sequence folder path.
+* savePath: indicates the path of the data saving folder.
+* sampleType: Sampling mode. 0: maximum sampling, 1: average sampling.
+* codeType: Encoding mode. Code0: high compression ratio Code1: high speed.
+* startEpoch: Start round, starting from 0, used to continue production from the specified round after an abnormal interruption.
+* noUseCpu: indicates the number of cpu cores reserved.
+```
 ## Format requirements for Large-scale data transformation
 * 8bit/16bit,uncompression/LZW,Stripe storage<br>
 * image size in x/y: less than 50000 x 50000<br>
@@ -28,12 +35,6 @@ createBV(config)
 4. All paths cannot contain Chinese characters and Spaces.
 
 
-## Parameter description
-* srcPath: Image sequence folder path.
-* savePath: indicates the path of the data saving folder.
-* sampleType: Sampling mode. 0: maximum sampling, 1: average sampling.
-* codeType: Encoding mode. Code0: high compression ratio Code1: high speed.
-* startEpoch: Start round, starting from 0, used to continue production from the specified round after an abnormal interruption.
-* noUseCpu: indicates the number of cpu cores reserved.
+
 
 
